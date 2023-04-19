@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* GENERAL STYLES */
+body {
+    font-family: "Space Grotesk", sans-serif;
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+.container {
+    margin-top: 50px;
+}
+
+/* Calculator Styles */
+.calc {
+    color: #fff;
+    width: 400px;
+    padding: 15px;
+}
+.calc .display {
+    padding: 15px;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.keys-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.keypad .keys-row .key {
+    background-color: #333333;
+    font-size: 1.7rem;
+    text-align: center;
+    width: 95px;
+    line-height: 85px;
+    border-radius: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    user-select: none;
+}
+.keypad :first-child :nth-child(1),
+.keypad :first-child :nth-child(2),
+.keypad :first-child :nth-child(3) {
+    background-color: #a5a5a5;
+}
+.keypad .keys-row .key:active {
+    background-color: #a5a5a590;
+}
+.keypad .keys-row :last-child {
+    background-color: #ffa45c;
+}
+.keypad .keys-row :last-child:active {
+    background-color: #ffa45ccc;
+}
+.keypad :last-child :first-child {
+    width: 190px;
+}
